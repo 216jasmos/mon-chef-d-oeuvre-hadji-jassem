@@ -5,30 +5,58 @@ body {
     margin: 0;
 }
 
+/* Container for centered content */
 .container {
     max-width: 960px;
     margin: 0 auto;
 }
 
-
+/* Header layout */
 header {
     display: flex;
-    justify-content: space-between; /* Gère l'alignement sur l'axe principal (horizontal par défaut) */
-    align-items: center;    /* Gère l'alignement sur l'axe secondaire (vertical par défaut) */
+    justify-content: space-between; /* Horizontal alignment */
+    align-items: center;            /* Vertical alignment */
     padding: 1rem 2rem;
-    background-color: rgb(255, 251, 0);
+    background-color: white ;
 }
 
+/* Navigation menu */
 .menu {
-    list-style: none;
-  display: flex;
-}
-.lien {
-  display: flex;
-  margin: 0 15px;
+    list-style: none ;
+    display: flex ;
+    margin: 0 ; 
+    padding: 0 ; 
 }
 
+/* Menu items */
+.lien {
+    margin: 0 15px;
+}
+
+/* Links */
 .lien a {
     text-decoration: none;
     color: rgb(138, 137, 221);
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.lien a:hover {
+    color: rgb(255, 255, 255); /* Example hover color */
+}
+
+
+/* ... vos styles existants ... */
+
+body.dark-mode {
+  background-color: #000000;
+  color: #000000;
+}
+
+body.dark-mode .container {
+  background-color: #34495e;
+  /* Ajoutez d'autres styles pour le dark mode si nécessaire */
+}
+
+body.dark-mode a {
+  color: #000000;
 }
